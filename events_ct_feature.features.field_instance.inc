@@ -67,7 +67,7 @@ function events_ct_feature_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -168,7 +168,7 @@ function events_ct_feature_field_default_field_instances() {
         'year_range' => '-1:+1',
       ),
       'type' => 'date_popup',
-      'weight' => 3,
+      'weight' => 10,
     ),
   );
 
@@ -218,7 +218,7 @@ function events_ct_feature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_hp_carousel_start',
-    'label' => 'hp carousel start',
+    'label' => 'Event Date',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -240,7 +240,7 @@ function events_ct_feature_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 13,
+      'weight' => 2,
     ),
   );
 
@@ -319,7 +319,7 @@ function events_ct_feature_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -390,7 +390,7 @@ function events_ct_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -450,7 +450,7 @@ function events_ct_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -509,7 +509,7 @@ function events_ct_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -571,7 +571,7 @@ function events_ct_feature_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -582,11 +582,11 @@ function events_ct_feature_field_default_field_instances() {
   t('Date');
   t('Description');
   t('Event Caption');
+  t('Event Date');
   t('Image');
   t('Location');
   t('Publishing Status');
   t('Room');
-  t('hp carousel start');
 
   return $field_instances;
 }
