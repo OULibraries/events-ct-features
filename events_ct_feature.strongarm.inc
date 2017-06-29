@@ -108,10 +108,10 @@ function events_ct_feature_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '10',
+          'weight' => '8',
         ),
       ),
       'display' => array(
