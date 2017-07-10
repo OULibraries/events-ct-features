@@ -71,107 +71,6 @@ function events_ct_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_event_date'.
-  $field_instances['node-event-field_event_date'] = array(
-    'bundle' => 'event',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'medium',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 0,
-      ),
-      'event_request' => array(
-        'label' => 'above',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'medium',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'medium',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 0,
-      ),
-      'single_event' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'medium',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_event_date',
-    'label' => 'Date',
-    'required' => 0,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'weight' => -4,
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'display_all_day' => 0,
-        'increment' => 15,
-        'input_format' => 'm/d/Y - g:i:sa',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'text_parts' => array(),
-        'year_range' => '-1:+1',
-      ),
-      'type' => 'date_popup',
-      'weight' => 10,
-    ),
-  );
-
   // Exported field_instance: 'node-event-field_hp_carousel_start'.
   $field_instances['node-event-field_hp_carousel_start'] = array(
     'bundle' => 'event',
@@ -218,7 +117,7 @@ function events_ct_feature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_hp_carousel_start',
-    'label' => 'Event Date',
+    'label' => 'Date of Event',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -579,10 +478,9 @@ function events_ct_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Add a 60 character caption for this event. It will display as the description in an event carousel. Put longer text in description field.');
   t('Added a broad location for this event.');
-  t('Date');
+  t('Date of Event');
   t('Description');
   t('Event Caption');
-  t('Event Date');
   t('Image');
   t('Location');
   t('Publishing Status');
